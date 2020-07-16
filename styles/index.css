@@ -5,14 +5,15 @@
   margin: 0 auto;
 }
 
+/**ESTILOS DEL HEADER**/
 header {
   border-bottom: 3.6px solid #f7f7f7;
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  font-family: "Asap", sans-serif;
-  font-weight: 700;
 }
 .header__logo {
   margin: auto 0;
@@ -37,4 +38,33 @@ header {
   background: none;
   cursor: pointer;
   font-weight: 700;
+}
+
+/**ESTILOS DEL HERO**/
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5%;
+}
+
+.hero__info {
+  align-self: center;
+}
+.hero__info--titulo {
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.hero__info--parrafo {
+  font-family: "Asap", sans-serif;
+  font-weight: 600;
+  color: #ccc3c3;
+  width: 85%;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin: 0;
+}
+.hero__img img {
+  width: 85%;
 }
