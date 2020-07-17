@@ -4,7 +4,6 @@
   --second-color: #ccc3c3;
   --parrafo-color: #777373;
   --main-font: "Asap", sans-serif;
-  --main-font-blog: "Merriweather Sans", sans-serif;
 }
 
 /**ESTILOS GLOBALES**/
@@ -36,6 +35,7 @@
     max-width: 1140px;
   }
 }
+
 .subtitulo {
   font-family: var(--main-font);
   font-weight: 700;
@@ -48,8 +48,6 @@
   text-align: left !important;
   padding: 2rem 0 !important;
 }
-
-/**ESTILOS GLOBALES**/
 
 /**ESTILOS DEL HEADER**/
 header {
@@ -101,40 +99,21 @@ header {
   font-weight: 700;
 }
 
-/**ESTILOS POSTS**/
-
-.posts__contenedor {
-  display: block;
-  grid-template-columns: 60% 35%;
-  column-gap: 5%;
+/**ARTICULO ESTILOS**/
+.articulo {
+  margin-top: 5%;
+  text-align: center;
 }
-@media (max-width: 680px) {
-  .posts__contenedor {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.post__item {
-  display: grid;
-  grid-template-columns: 30% 65%;
-  column-gap: 5%;
-  margin-bottom: 15px;
-}
-.post__item--img img {
+.articulo__img {
   width: 100%;
 }
 
-.post__item--body--titulo,
-.post__item--body--descripcion {
+.articulo__titulo {
   font-family: var(--main-font);
-  margin: 0;
-}
-.post__item--body--descripcion {
-  margin: 1rem 0;
 }
 
-@media (max-width: 680px) {
-  .post__imageness {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.articulo__content {
+  font-family: var(--main-font);
+  text-align: left;
+  line-height: 1.6rem;
 }
