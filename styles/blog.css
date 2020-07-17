@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&family=Merriweather+Sans:wght@400;700;800&display=swap");
+:root {
+  --main-color: #78e5e1;
+  --second-color: #ccc3c3;
+  --parrafo-color: #777373;
+  --main-font: "Asap", sans-serif;
+  --main-font-blog: "Merriweather Sans", sans-serif;
+}
+
+/**ESTILOS GLOBALES**/
+.container {
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/**ESTILOS GLOBALES**/
+
+/**ESTILOS DEL HEADER**/
+header {
+  border-bottom: 3.6px solid #f7f7f7;
+  font-family: var(--main-font);
+  font-weight: 700;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 680px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+}
+.header__logo {
+  margin: auto 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--main-color);
+}
+.header__list {
+  display: inherit;
+  list-style: none;
+}
+@media (max-width: 680px) {
+  .header__list {
+    display: flex;
+  }
+}
+.header__list--item {
+  margin-left: 10px;
+}
+.header__list--item a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+.header__list--item a:hover {
+  color: var(--main-color);
+}
+
+.header__darkMode {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/**ESTILOS HEADER*/
+
+.hero__titulo {
+  font-size: 3em;
+  font-family: var(--main-font-blog);
+  font-weight: 700;
+}
+.hero__parrafo {
+  font-size: 1.5rem;
+  font-family: var(--main-font-blog);
+  color: var(--parrafo-color);
+}
+
+/**estilos articulos**/
+.articles {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-top: 10%;
+}
+
+.articles__item {
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px 0px rgba(163, 163, 163, 1);
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.articles__item:nth-of-type(1) {
+  color: white;
+  grid-column: 1/3;
+  padding: 5rem 1rem;
+
+  background-image: url("https://images.unsplash.com/photo-1587465511660-05c929e0e874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+  background-position: center;
+  background-size: cover;
+}
+.articles__item:nth-of-type(2) {
+  color: white;
+  grid-column: 3 / auto;
+  grid-row: 1 / 4;
+
+  background-image: url("https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background-position: center;
+  background-size: cover;
+}
+.articles__item:nth-of-type(3) {
+  color: white;
+  grid-column: 4 / auto;
+  grid-row: 1 / 4;
+
+  background-image: url("https://images.unsplash.com/photo-1533236897111-3e94666b2edf?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-position: center;
+  background-size: cover;
+}
+.articles__item:nth-of-type(4) {
+  color: white;
+  grid-row: 2 / 5;
+
+  background-image: url("https://images.unsplash.com/photo-1593806061006-bee8dc30fdee?ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80");
+  background-position: center;
+  background-size: cover;
+}
+.articles__item:nth-of-type(5) {
+  background-color: rgb(255, 6, 180);
+  grid-row: 2 / 5;
+}
+.articles__item:nth-of-type(6) {
+  background-color: darkcyan;
+  grid-column: 3/5;
+  padding: 5rem 1rem;
+}
+.articles__item--titulo {
+  font-family: var(--main-font-blog);
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  font-size: 1.5rem;
+}
+
+.articles__item--seeMore {
+  padding: 0.3rem 1rem;
+  background-color: white;
+  font-family: var(--main-font-blog);
+  color: black;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+
+  box-shadow: 1px 1px 8px 0px rgba(163, 163, 163, 0.2);
+}
