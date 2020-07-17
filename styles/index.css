@@ -118,6 +118,7 @@ header {
 .proyectos__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 3%;
 }
 .proyecto__item {
   border-radius: 10px;

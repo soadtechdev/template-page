@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/normalize.css" />
     <title>SoadTech</title>
@@ -30,13 +30,33 @@
     <main class="container">
       <section class="hero">
         <div class="hero__info">
-          <h1 class="hero__info--titulo">Fernando Ropero</h1>
-          <p class="hero__info--parrafo">
+          <h1
+            data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+            class="hero__info--titulo"
+          >
+            Fernando Ropero
+          </h1>
+          <p
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+            class="hero__info--parrafo"
+          >
             Front End Developer. Working with opensources, Interested in
             challenges and opportunities in web area.
           </p>
         </div>
-        <div class="hero__img">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+          class="hero__img"
+        >
           <img
             src="https://soadtech.com/static/media/example-scene-2.bdd64c32.svg"
             alt="imagen hero"
@@ -46,13 +66,79 @@
 
       <!--PROYECTOS-->
       <section class="proyectos">
-        <h2 class="subtitulo">Most Popular</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1700" class="subtitulo">
+          Most Popular
+        </h2>
         <div class="proyectos__list">
-          <div class="proyecto__item">
+          <div
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            class="proyecto__item"
+          >
             <div class="proyecto__item--img">
               <a href="/proyecto/:id">
                 <img
                   src="https://i.ibb.co/jWCyQKx/b-Al-d-Ww-OJ.jpg"
+                  alt="proyecto1"
+                />
+              </a>
+            </div>
+            <div class="proyecto__item--body">
+              <h3 class="proyecto__item--body--nombre">Japan - Improve Your</h3>
+              <p class="proyecto__item--body--descripcion">
+                Pagina hecha para un peque;o restaurante en el cual se pueden
+                realizar pedidos via web
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+            class="proyecto__item"
+          >
+            <div class="proyecto__item--img">
+              <a href="/proyecto/:id">
+                <img
+                  src="https://i.ibb.co/wh76GYp/4-G6gl5-H7u.jpg"
+                  alt="proyecto1"
+                />
+              </a>
+            </div>
+            <div class="proyecto__item--body">
+              <h3 class="proyecto__item--body--nombre">Japan - Improve Your</h3>
+              <p class="proyecto__item--body--descripcion">
+                Pagina hecha para un peque;o restaurante en el cual se pueden
+                realizar pedidos via web
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up-right"
+            data-aos-duration="1500"
+            class="proyecto__item"
+          >
+            <div class="proyecto__item--img">
+              <a href="/proyecto/:id">
+                <img src="https://i.ibb.co/xCfGhY4/3.png" alt="proyecto1" />
+              </a>
+            </div>
+            <div class="proyecto__item--body">
+              <h3 class="proyecto__item--body--nombre">Japan - Improve Your</h3>
+              <p class="proyecto__item--body--descripcion">
+                Pagina hecha para un peque;o restaurante en el cual se pueden
+                realizar pedidos via web
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up-right"
+            data-aos-duration="2000"
+            class="proyecto__item"
+          >
+            <div class="proyecto__item--img">
+              <a href="/proyecto/:id">
+                <img
+                  src="https://i.ibb.co/MnCsk55/I2-Ibx2x42.jpg"
                   alt="proyecto1"
                 />
               </a>
@@ -70,11 +156,13 @@
 
       <!--POSTS-->
       <section class="posts">
-        <h2 class="subtitulo left">Recent posts</h2>
+        <h2 data-aos-duration="1200" data-aos="fade-up" class="subtitulo left">
+          Recent posts
+        </h2>
 
         <div class="posts__contenedor">
           <div class="post__blog">
-            <div class="post__item">
+            <div data-aos-duration="1300" data-aos="fade-up" class="post__item">
               <div class="post__item--img">
                 <img src="https://i.ibb.co/4tG75xb/8ygu-KSC6-E.jpg" alt="" />
               </div>
@@ -89,7 +177,7 @@
                 </p>
               </div>
             </div>
-            <div class="post__item">
+            <div data-aos-duration="1400" data-aos="fade-up" class="post__item">
               <div class="post__item--img">
                 <img src="https://i.ibb.co/4tG75xb/8ygu-KSC6-E.jpg" alt="" />
               </div>
@@ -104,7 +192,7 @@
                 </p>
               </div>
             </div>
-            <div class="post__item">
+            <div data-aos-duration="1500" data-aos="fade-up" class="post__item">
               <div class="post__item--img">
                 <img src="https://i.ibb.co/4tG75xb/8ygu-KSC6-E.jpg" alt="" />
               </div>
@@ -123,13 +211,21 @@
           <div class="post__imagenes">
             <h2>Imagenes de viajes</h2>
             <div class="post__imageness">
-              <div class="post__imagenes--imagen">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="2500"
+                class="post__imagenes--imagen"
+              >
                 <img
                   src="https://images.unsplash.com/photo-1594879572756-e254199fea05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
                   alt=""
                 />
               </div>
-              <div class="post__imagenes--imagen">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                class="post__imagenes--imagen"
+              >
                 <img
                   src="https://images.unsplash.com/photo-1594879572756-e254199fea05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
                   alt=""
@@ -147,5 +243,9 @@
       integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
