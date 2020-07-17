@@ -172,6 +172,7 @@ header {
 }
 
 .articles__item--seeMore {
+  text-decoration: none;
   padding: 0.3rem 1rem;
   background-color: white;
   font-family: var(--main-font-blog);

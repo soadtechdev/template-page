@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&family=Merriweather+Sans:wght@400;700;800&display=swap");
+:root {
+  --main-color: #78e5e1;
+  --second-color: #ccc3c3;
+  --parrafo-color: #777373;
+  --main-font: "Asap", sans-serif;
+  --main-font-blog: "Merriweather Sans", sans-serif;
+}
+
+/**ESTILOS GLOBALES**/
+.container {
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/**ESTILOS GLOBALES**/
+
+/**ESTILOS DEL HEADER**/
+header {
+  border-bottom: 3.6px solid #f7f7f7;
+  font-family: var(--main-font);
+  font-weight: 700;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 680px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+}
+.header__logo {
+  margin: auto 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--main-color);
+}
+.header__list {
+  display: inherit;
+  list-style: none;
+}
+@media (max-width: 680px) {
+  .header__list {
+    display: flex;
+  }
+}
+.header__list--item {
+  margin-left: 10px;
+}
+.header__list--item a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+.header__list--item a:hover {
+  color: var(--main-color);
+}
+
+.header__darkMode {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 700;
+}
