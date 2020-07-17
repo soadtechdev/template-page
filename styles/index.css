@@ -5,11 +5,16 @@
   --parrafo-color: #777373;
   --main-font: "Asap", sans-serif;
 }
+
 /**ESTILOS GLOBALES**/
 .container {
-  width: 100%;
-  margin: 0 auto;
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -55,6 +60,12 @@ header {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 680px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+}
 .header__logo {
   margin: auto 0;
   font-size: 1.4rem;
@@ -64,6 +75,11 @@ header {
 .header__list {
   display: inherit;
   list-style: none;
+}
+@media (max-width: 680px) {
+  .header__list {
+    display: flex;
+  }
 }
 .header__list--item {
   margin-left: 10px;
@@ -91,6 +107,12 @@ header {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5%;
 }
+@media (max-width: 680px) {
+  .hero {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
 
 .hero__info {
   align-self: center;
@@ -114,15 +136,34 @@ header {
 }
 
 /** estilos proyectos **/
-
+.proyectos {
+  margin-top: 10%;
+}
+@media (max-width: 680px) {
+  .proyectos {
+    margin: auto;
+  }
+}
 .proyectos__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 3%;
 }
+@media (max-width: 680px) {
+  .proyectos__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .proyecto__item {
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
+}
+@media (max-width: 680px) {
+  .proyecto__item {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
 }
 
 .proyecto__item--img img {
@@ -151,6 +192,11 @@ header {
   grid-template-columns: 60% 35%;
   column-gap: 5%;
 }
+@media (max-width: 680px) {
+  .posts__contenedor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .post__item {
   display: grid;
@@ -174,6 +220,11 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10px;
+}
+@media (max-width: 680px) {
+  .post__imageness {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .post__imagenes--imagen img {
   width: 100%;
